@@ -17,12 +17,12 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="number" step="0.1" name="1" placeholder="Timbre1" required="required" />
-        <input type="number" step="0.01" name="2" placeholder="Timbre2" required="required" />
-		      <input type="number" step="0.01" name="3" placeholder="Timbre3" required="required" />
-            <input type="number" step="0.01" name="4" placeholder="Timbre5" required="required" />
-              <input type="number" step="0.01" name="5" placeholder="Timbre6" required="required" />
-                <input type="number" step="0.01" name="6" placeholder="Timbre10" required="required" />
+    	<input type="number" step="0.1" name="1" placeholder="Timbre1 (between 0 and 1)" required="required" />
+        <input type="number" step="0.01" name="2" placeholder="Timbre2 (between 0 and 1)" required="required" />
+		      <input type="number" step="0.01" name="3" placeholder="Timbre3 (between 0 and 1)" required="required" />
+            <input type="number" step="0.01" name="4" placeholder="Timbre5 (between 0 and 1)" required="required" />
+              <input type="number" step="0.01" name="5" placeholder="Timbre6 (between 0 and 1)" required="required" />
+                <input type="number" step="0.01" name="6" placeholder="Timbre10 (between 0 and 1)" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict the release year</button>
     </form>
